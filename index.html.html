@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLEXIAPLIQUES</title>
+  
+  <!-- Fuente para el título (alternativa gratuita a MisterEarl BT) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+
+    .hero h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 3.5rem;
+      color: #000;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      margin-bottom: 24px;
+      color: #555;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #ff6b35; /* Naranja vibrante */
+      color: white;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #e05a2a;
+    }
+
+    /* Secciones */
+    section {
+      padding: 50px 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature-card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+    }
+
+    .sub-features {
+      margin-top: 16px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .sub-features p {
+      margin: 8px 0;
+    }
+
+    /* Galería */
+    .gallery {
+      text-align: center;
+    }
+
+    .gallery-placeholder {
+      height: 300px;
+      background: #eee;
+      margin: 30px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-style: italic;
+      max-width: 800px;
+    }
+
+    .catalog-buttons {
+      margin-top: 30px;
+    }
+
+    .catalog-buttons a {
+      display: inline-block;
+      margin: 0 10px 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .catalog-buttons a:hover {
+      opacity: 0.9;
+    }
+
+    /* Footer CTA */
+    .final-cta {
+      text-align: center;
+      background: #f0f0f0;
+      padding: 50px 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .hero p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>FLEXIAPLIQUES</h1>
+      <p>Diseños para lookear tus prendas</p>
+      <a href="#contact" class="cta-button">Crea tus apliques hoy</a>
+    </div>
+  </header>
+
+  <!-- ¿Qué hacemos? -->
+  <section class="container">
+    <h2>¿Qué hacemos?</h2>
+    <p>En FLEXIAPLIQUES creamos etiquetas y parches hechos a medida para emprendedores, diseñadores y marcas que quieren dejar su huella.</p>
+    <p>Contamos con nuestro propio muestrario tanto para estampados como para bordados.</p>
+
+    <div class="features">
+      <!-- Termoadhesivos -->
+      <div class="feature-card">
+        <h3>Termoadhesivos</h3>
+        <p>Se fijan con el calor de una plancha de acero.</p>
+        <div class="sub-features">
+          <p><strong>Livianos:</strong> Para prendas suaves (algodón, poliéster, gabardina)</p>
+          <p><strong>Duros:</strong> Para buzos, camperas y prendas deportivas con desgaste</p>
+        </div>
+      </div>
+
+      <!-- Bordados -->
+      <div class="feature-card">
+        <h3>Bordados</h3>
+        <p>Diseños resistentes y con textura, perfectos para un look premium.</p>
+        <div class="sub-features">
+          <p><strong>Coser:</strong> Aplicación tradicional con hilo</p>
+          <p><strong>Termo:</strong> Bordado con base termoadhesiva para planchar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section class="container">
+    <h2>Cómo funciona</h2>
+    <p>Nuestro proceso está pensado para que tus diseños se conviertan en apliques reales en tres pasos simples:</p>
+    <ol style="text-align: center; max-width: 700px; margin: 20px auto; font-size: 1.1rem;">
+      <li><strong>Diseños:</strong> envíanos tu idea, logo o concepto.</li>
+      <li><strong>Elección del tipo:</strong> termoadhesivo, bordado o (pronto) autoadhesivo.</li>
+      <li><strong>Apliques listos:</strong> recibes tus parches para adherirlos cuando quieras.</li>
+    </ol>
+    <p style="text-align: center; margin-top: 20px;">Ideal para colecciones limitadas, identidad de marca o regalos personalizados.</p>
+  </section>
+
+  <!-- Galería -->
+  <section class="gallery container">
+    <h2>Galería de diseños</h2>
+    <div class="gallery-placeholder">
+      [Espacio para fotos y videos reales]
+    </div>
+    <p>Mira cómo una prenda común se transforma con tus diseños.</p>
+
+    <div class="catalog-buttons">
+      <a href="https://tucatalogo-estampados.com" target="_blank">Ver catálogo de estampados</a>
+      <a href="https://tucatalogo-bordados.com" target="_blank">Ver catálogo de bordados</a>
+    </div>
+  </section>
+
+  <!-- Llamado final -->
+  <section class="final-cta" id="contact">
+    <div class="container">
+      <h2>¿Listo para estampar tu marca?</h2>
+      <p>Trabajamos con emprendedores de toda la región y ofrecemos muestras, tiradas cortas y asesoría en diseño.</p>
+      <p><strong>📧 Escríbenos</strong> para comenzar<br>
+      o<br>
+      <strong>📱 Envíanos un mensaje por WhatsApp</strong></p>
+    </div>
+  </section>
+
+</body>
+</html>
