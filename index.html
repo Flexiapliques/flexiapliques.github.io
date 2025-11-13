@@ -213,13 +213,37 @@
     <p style="text-align: center; margin-top: 20px;">Ideal para colecciones limitadas, identidad de marca o regalos personalizados.</p>
   </section>
 
- <!-- Galería y catálogos con modal -->
-<section class="gallery container">
-  <h2>Galería de diseños</h2>
-  <div class="gallery-placeholder">
-    [Espacio para fotos y videos reales]
+<!-- GALERÍA DE DISEÑOS -->
+<section class="container" style="padding-top: 40px; padding-bottom: 40px;">
+  <h2 style="text-align: center; margin-bottom: 25px;">Galería de diseños</h2>
+  
+  <!-- Cuadrícula de diseños infantiles -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 20px auto; max-width: 900px;">
+    <img src="img/niño-autito.png" alt="Diseño niño con autito" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <img src="img/niño-cohete.png" alt="Diseño niño con cohete" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <img src="img/niña-floral.png" alt="Diseño niña floral" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+    <img src="img/niños-futbol.png" alt="Diseño niños con fútbol" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
   </div>
-  <p>Mira cómo una prenda común se transforma con tus diseños.</p>
+
+  <p style="text-align: center; max-width: 700px; margin: 25px auto 0;">
+    Mira cómo una prenda común se transforma con tus diseños.
+  </p>
+
+  <!-- Imagen explicativa del proceso -->
+  <div style="margin: 40px auto; max-width: 800px; text-align: center;">
+    <h3 style="margin-bottom: 15px; color: #333;">¿Cómo se aplica un aplique?</h3>
+    <img src="img/story-flexi.jpg" alt="Guía paso a paso para aplicar apliques termoadhesivos" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); max-width: 800px;">
+    <p style="margin-top: 12px; font-size: 0.95rem; color: #555;">
+      Secuencia visual del proceso de planchado: diseño, posición, calor y listo.
+    </p>
+  </div>
+
+  <!-- Botones de catálogo (con modal integrado) -->
+  <div class="catalog-buttons" style="text-align: center; margin-top: 30px;">
+    <button class="modal-button" onclick="openPdfModal('estampados')">Ver catálogo de estampados</button>
+    <button class="modal-button" onclick="openPdfModal('bordados')">Ver catálogo de bordados</button>
+  </div>
+</section>
 
 <!-- VIDEOS INSTRUCTIVOS -->
 <section class="container" style="padding: 40px 20px; background: #f9f9f9;">
