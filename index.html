@@ -340,20 +340,19 @@
 </style>
 
 <script>
-  // URLs de tus catálogos en Google Drive (modo preview)
+  // URLs de los catálogos en Google Drive (modo preview)
   const CATALOGOS = {
-    estampados: 'https://drive.google.com/file/d/1rmevfNoxEJnHNcoI76OhaswoJoRQDmg0/preview'
+    estampados: 'https://drive.google.com/file/d/1rmevfNoxEJnHNcoI76OhaswoJoRQDmg0/preview',
     bordados: 'https://drive.google.com/file/d/1MbBt0Km2h60mZp3-1X2cCcJjw8VCqpEm/preview'
   };
 
   function openPdfModal(tipo) {
     const iframe = document.getElementById('pdf-embed');
     const modal = document.getElementById('pdf-modal');
-    
     if (CATALOGOS[tipo]) {
       iframe.src = CATALOGOS[tipo];
       modal.style.display = 'flex';
-      document.body.style.overflow = 'hidden'; // Evita scroll en fondo
+      document.body.style.overflow = 'hidden';
     }
   }
 
@@ -361,18 +360,23 @@
     const modal = document.getElementById('pdf-modal');
     const iframe = document.getElementById('pdf-embed');
     modal.style.display = 'none';
-    iframe.src = ''; // Detiene el PDF al cerrar
-    document.body.style.overflow = ''; // Restaura scroll
+    iframe.src = '';
+    document.body.style.overflow = '';
   }
 
-  // Cerrar modal con clic fuera o tecla Escape
-  document.getElementById('pdf-modal').onclick = function(e) {
-    if (e.target === this) closePdfModal();
-  };
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closePdfModal();
+  // Cerrar al hacer clic fuera del PDF
+  document.addEventListener('click', function(e) {
+    const modal = document.getElementById('pdf-modal');
+    if (modal && modal.style.display === 'flex' && e.target === modal) {
+      closePdfModal();
+    }
   });
-</script>
-</body>
+
+  // Cerrar con la tecla Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closePdfModal();
+    }
+  });
+</script></body>
 </html>
